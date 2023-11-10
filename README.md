@@ -1,5 +1,5 @@
 
-# SQL query examples for NORTHWIND database..
+# SQL query examples for NORTHWIND database.. 👩‍💻
 
 ## Queries
 
