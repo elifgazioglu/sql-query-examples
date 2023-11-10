@@ -1,4 +1,7 @@
-﻿#SQL query examples for NORTHWIND database
+
+# SQL query examples for NORTHWIND database..
+
+## Queries
 
 1.Write a query to get Product name and quantity.
 
@@ -31,3 +34,5 @@
 15.List all products where UnitPrice is not in 10,12,15,17 or 19.
 
 16.Write a query, TitleOfCourstey value is Male if it is Mr., Female if it is Mrs or Ms.
+
+
