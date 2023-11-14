@@ -85,3 +85,13 @@ group by CategoryID
 --Write a query to show the total order counts by customer cities:
 select ShipCity, count(*) as Piece from Orders
 group by ShipCity
+
+--Write a query to show the countries with more than 3 customers.
+select Country ,Count(*) from Customers
+group by Country
+having count(*) >3
+
+--Write a query to show the categories with an average unit price greater than 30.
+select CategoryID, avg(UnitPrice) as Price from Products
+group by CategoryID
+having avg(UnitPrice) > 30
