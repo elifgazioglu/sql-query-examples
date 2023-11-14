@@ -38,7 +38,7 @@ select * from Employees where TitleOfCourtesy not like 'M%'
 --List order details whose ShipRegion is not Null.
 select * from Orders where ShipRegion is not NULL
 
---All products where UnitPrice is between 10 and 15 and QuantityPerUnit contains ìbottlesî
+--All products where UnitPrice is between 10 and 15 and QuantityPerUnit contains ‚Äúbottles‚Äù
 select * from Products where UnitPrice between 10 and 15 and QuantityPerUnit like '%bottles%'
 
 -- List all products where UnitPrice is not in 10,12,15,17 or 19.
@@ -52,3 +52,36 @@ case [TitleOfCourtesy]
 	when 'Ms.' then 'Female'
 	end
 from Employees
+
+--List cities from the customer table without repeating:
+select distinct(City) from Customers
+
+--Write a query that increases the unit price of a product in the product table (for example, ProductID=1):.
+select * from Products
+update Products set UnitPrice=18 where ProductID=1
+
+--Write a query to show the average unit price by product categories:
+select * from Products
+select CategoryID, AVG(UnitPrice) as Avarage from Products
+group by CategoryID
+
+--Write a query to show how many customers there are in each country:
+select * from Customers
+select Country ,count(*) from Customers
+group by Country
+
+--Write a query to show the total stock quantity of products by categories:
+select CategoryID, SUM(UnitsInStock) as Stock from Products
+group by CategoryID
+
+--Write a query to show the distribution of orders by years:
+select YEAR(OrderDate) as Year, Count(OrderID) as SumOrders from Orders
+group by YEAR(OrderDate)
+
+--Write a query to show the highest unit price of products in each category:
+select CategoryID as CategoryId, Max(UnitPrice) as MaxPrice from Products
+group by CategoryID
+
+--Write a query to show the total order counts by customer cities:
+select ShipCity, count(*) as Piece from Orders
+group by ShipCity
