@@ -45,6 +45,11 @@
 
 21.Write a query to show the total order counts by customer cities.
 
+22.Write a query to show the countries with more than 3 customers.
+
+23.Write a query to show the categories with an average unit price greater than 30.
+
+
 
 
 
