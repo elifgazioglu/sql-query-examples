@@ -35,4 +35,17 @@
 
 16.Write a query, TitleOfCourstey value is Male if it is Mr., Female if it is Mrs or Ms.
 
+17.Write a query to show how many customers there are in each country.
+
+18.Write a query to show the total stock quantity of products by categories.
+
+19.Write a query to show the distribution of orders by years.
+
+20.Write a query to show the highest unit price of products in each category.
+
+21.Write a query to show the total order counts by customer cities.
+
+
+
+
 
