@@ -49,6 +49,21 @@
 
 23.Write a query to show the categories with an average unit price greater than 30.
 
+24.Write a query to find the average order amount for each customer in the "Orders" table.
+
+25.Write a query to find the youngest and oldest employees in the "Employees" table based on their birthdates.
+
+26.Write a query to sort the products in the "Products" table in descending order based on their stock levels.
+
+27.Write a query to find the total expenditure made by each customer in the "Orders Details" table.
+
+28.Write a query to find the customer who placed the most orders in the "Order Details" table.
+
+29.Write a query to find products in the "Products" table with prices higher than the average price of other products.
+
+
+
+
 
 
 
