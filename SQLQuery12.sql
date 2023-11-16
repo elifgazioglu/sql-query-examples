@@ -95,3 +95,40 @@ having count(*) >3
 select CategoryID, avg(UnitPrice) as Price from Products
 group by CategoryID
 having avg(UnitPrice) > 30
+
+--Write a query to find the average order amount for each customer in the "Orders" table.
+select * from Orders
+select EmployeeID ,count(*) from Orders
+group by EmployeeID
+
+--Write a query to find the youngest and oldest employees in the "Employees" table based on their birthdates
+select * from Employees
+select * from Employees
+select MAX(BirthDate) as younger, MIN(BirthDate) as older from Employees
+
+select FirstName, LastName, BirthDate from Employees
+where BirthDate in(select max(BirthDate) from Employees union select min(BirthDate) from Employees)
+
+--Write a query to sort the products in the "Products" table in descending order based on their stock levels.
+select * from Products
+select ProductName, UnitsInStock from Products
+order by UnitsInStock
+
+--Write a query to find the total expenditure made by each customer in the "Orders Details" table.
+select * from [Order Details]
+select OrderID, sum(UnitPrice) as SumPrice from [Order Details]
+group by OrderID
+
+--Write a query to find the customer who placed the most orders in the "Order Details" table.
+select * from [Order Details]
+select top 1 OrderID, count(*) as OrderCount from [Order Details]
+group by OrderID
+order by count(*) desc
+
+--Write a query to find products in the "Products" table with prices higher than the average price of other products.
+select * from Products
+select ProductID, UnitPrice from Products
+where UnitPrice > (select avg(UnitPrice) from Products)
+
+
+
