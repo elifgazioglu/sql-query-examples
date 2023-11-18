@@ -123,5 +123,11 @@ order by count(*) desc
 select ProductID, UnitPrice from Products
 where UnitPrice > (select avg(UnitPrice) from Products)
 
+--Write a query that shows the CompanyName, ContatTitle, City, Country of all customers in any ciy in Mexico or oher cities in Spain than Madrid
+select CompanyName,ContactTitle, City, Country from Customers
+where
+(Country = 'Mexico') or
+(Country = 'Spain' and City!= 'Madrid')
+
 
 
