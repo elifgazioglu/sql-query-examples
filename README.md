@@ -61,6 +61,7 @@
 
 29.Write a query to find products in the "Products" table with prices higher than the average price of other products.
 
+30.Write a query that shows the CompanyName, ContatTitle, City, Country of all customers in any ciy in Mexico or oher cities in Spain than Madrid.
 
 
 
